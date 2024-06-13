@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pikachuuu</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/scss/proyecto.css"> 
+   
+        <style>
+            .pikachu {
+                position: relative;
+                width: 100px;
+                height: 100px; 
+            }
+            .pikachu img {
+                position: absolute;
+            }
+            .ojo1 {
+                top: 441px;
+                left: 263px;
+                z-index: 2;
+            }
+            .ojo2 {
+                top: 441px;
+                left: 412px;
+                z-index: 2;
+            }
+            .brazo1 {
+                top: 683px;
+                left: 403px;
+                z-index: 2;
+            }
+            .brazo2 {
+                top: 683px;
+                left: 257px;
+                z-index: 2;
+            }
+            .cuerpo {
+                top: 80px;
+                left: 40px;
+            }
+            .boca {
+                top: 565px;
+                left: 309px;
+            }
+            .cola {
+                top: 630px;
+                right: -316px;
+                z-index: -1;
+            }
+
+            @keyframes move {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px); }
+        }
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(-10px); }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* @keyframes : que define animaciones que se pueden aplicar a elementos HTML. */
+</style>
+    </head>
+    <body>
+
+      
+    
+    <div class="container">
+        <h1>Parte III Evaluaciòn</h1>
+        <button class="btn btn-success"id="startAnimation">Muevete</button>
+        <ul class="list-group">
+            <li class="list-group-item">Debes armar y animar a Pikachu con HTML, CSS y Jquery.</li>
+            <li class="list-group-item">Puedes utilizar un fondo para que nuestro amigo no se vea tan solito.</li>
+            <li class="list-group-item">Para animarlo debes colocar un boton que diga "MUEVEME" y al hacerle click o pasar sobre este se genere la animación.</li>
+            <li class="list-group-item">Este trabajo debe ser subido a tu cuenta de Github y debes colocar el link de tu repositorio y el gh-pages.</li>
+        </ul>
+    </div>
+        <div class="pikachu">
+        <img src="assets/img/pikachu_ojo 1.png" class="ojo1" id="ojo1">
+        <img src="assets/img/pikachu_ojo 2.png" class="ojo2" id="ojo2">
+        <img src="assets/img/pikachu_brazo 2.png" class="brazo2" id="brazo2">
+        <img src="assets/img/pikachu_brazo 1.png" class="brazo1" id="brazo1">
+        <img src="assets/img/pikachu_cuerpo.png" class="cuerpo" id="cuerpo">
+        <img src="assets/img/pikachu_boca.png"  class="boca" id="boca">
+        <img src="assets/img/pikachu_cola.png"  class="cola" id="cola">
+        </div>
+    </body>
+    </html>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/bootstrap-5.3.3/dist/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
